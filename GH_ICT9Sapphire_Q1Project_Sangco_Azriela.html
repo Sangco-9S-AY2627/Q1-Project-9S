@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Project</title>
+</head>
+    <style>
+        h1{
+            color: rgb(14, 44, 70);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        h2{
+            color: rgb(84, 125, 147);
+            text-align: center;
+            border: 1px solid;
+            border-radius: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        p{
+            color: rgb(81, 88, 89);
+        }
+
+        header{
+            background-color: rgb(78, 132, 180);
+            height: 30px;
+        }
+
+        dl{
+            display: flex; 
+            list-style: none; 
+            padding: 0; 
+            gap: 15px;
+        }
+
+        .side-by-side{
+            display: flex;
+            gap: 20px;
+        }
+
+        .logo{
+            display: block;
+            height: 30px;
+            width: 30px
+        }
+
+        img{
+            width: 220px;
+        }
+
+        .hero{
+            background-color: rgb(218, 202, 230);
+        }
+
+        input[type="text"], input[type="tel"], input[type="email"], input[type="submit"], textarea, select{
+            width: 100%;
+            padding: 8px;
+            margin: 4px 0;
+            box-sizing: border-box;
+        }
+
+        fieldset{
+            background-color: rgb(168, 200, 219);
+        }
+
+        footer{
+            text-align: center;
+            background-color: rgb(78, 132, 180);
+            color: aliceblue;
+        }
+
+    </style>
+<body>
+   <div class="hero">
+    <!-- Added inline flex layout to the header to keep elements on the same line -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 40px;">
+        
+        <!-- 2. Logo stays first -->
+        <!-- Added a safe height restriction so massive image files don't break the layout -->
+        <img class="logo" src="logo-removebg-preview.png" alt="logo" style="height: 50px; width: auto;">
+        
+        <!-- 1. Navigation stays second -->
+        <nav class="navbar">
+            <ul class="nav-links" style="display: flex; list-style: none; gap: 20px; padding: 0; margin: 0;">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#works">My Works</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<center>
+    <br>
+    <img src="image.jpeg" alt="profile">
+    <h1>Hello, I'm Azriela Sangco</h1>
+    <p>Aspiring Webpage Designer</p>
+    <br>
+</center>
+    </div>
+
+<div class="portfolio">
+    <h2 id="about">About Me</h2>
+    <p>Hi! I'm Azriela Sangco, a student passionate about technology, especially in web development. I enjoy creating simple and creative websites. In my free time, I explore new coding tricks and designing tools. </p>
+
+    <br>
+
+    <h2 id="works">My Works</h2>
+    <center>
+    <div class="side-by-side">
+    <img src="artist.html.png" alt="favorite-artist">
+    <ul>
+        <li>✓ HTML & CSS Projects</li>
+        <li>✓ Spotify Artist</li>
+        <li>✓ Lists, Links, and Images</li>
+    </ul>
+    <img src="movie.html.html.png" alt="movie-rate">
+    <ul>
+        <li>✓ HTML & CSS Projects</li>
+        <li>✓ HTML Forms</li>
+        <li>✓ Movie Reccomendations</li>
+    </ul>
+    </div>
+    </center>
+
+    <h2 id="contact">Contact Me</h2>
+</div>
+    <div class="form">
+        <fieldset>
+            <!--NAME-->
+            <label for="fname">Your Name:</label><br>
+            <input id="fname" placeholder="Enter full name here" type="text">
+            <br><br>
+            <!--EMAIL-->
+            <label for="email">Your Email:</label><br>
+            <input id="email" type="email"><br><br>
+            <!--HOW-->
+            How Did You Find Me?
+                <input type="checkbox" name="find">
+                <label for="how-did-you-find-me">Instagram</label>
+                <input type="checkbox" name="find">
+                <label for="how-did-you-find-me">Google</label>
+                <input type="checkbox" name="find">
+                <label for="how-did-you-find-me">Friends</label><br>
+            <!--INTEREST-->
+            Interested In: 
+                <input type="checkbox" name="interest">
+                <label for="interest">Web Design</label>
+                <input type="checkbox" name="interest">
+                <label for="interest">Graphic Design</label>
+                <input type="checkbox" name="interest">
+                <label for="interest">Robotics</label>
+                <br><br>
+            <!--RATING-->
+            Rate My Portfolio
+             <select name="rate" id="rating"><br><br>
+                    <option value="⭐️">⭐️</option>
+                    <option value="⭐️⭐️">⭐️⭐️</option>
+                    <option value="⭐️⭐️⭐️">⭐️⭐️⭐️</option>
+                    <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️</option>
+                    <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️</option>
+            </select>
+                <br><br>
+            <!--FEEDBACK-->
+            Any Feedback?<br>
+            <label for="feedback"></label>
+            <textarea name="instructions" id="feedback" cols="9"></textarea>
+
+            <input type="submit" value="Submit" class="button submit"><br>
+        </fieldset>
+    </div>
+<br>
+        <footer>
+            &copy; Azriela Sangco. All rights reserved.
+        </footer>
+
+
+</body>
+</html>
